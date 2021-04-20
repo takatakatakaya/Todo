@@ -12,6 +12,7 @@ const Form = ({addTodo}) => {
         // addTodo(value);
         if (value) {
             addTodo(value);
+            setValue("")
         } else {
             alert('文字を入力してください。')
         }
@@ -26,9 +27,11 @@ const Form = ({addTodo}) => {
                  setValue(e.target.value);
                 }}
              />
-             <button>
-                 送信
-             </button>
+                <button>
+                    追加
+                </button>
+            {/* Button variant="contained" color="primary"
+            import Button from '@material-ui/core/Button'; */}
         </form>
     )
 }
